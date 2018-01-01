@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImagePickerExperiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sm4-C1-d9j">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFs-gR-Spv">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Picker" id="Ckq-f2-mPJ">
+                                        <connections>
+                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="CUC-cJ-I47"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLW-GH-qQX">
+                                <rect key="frame" x="252" y="28" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVc-KH-Mki">
+                                <rect key="frame" x="258" y="526" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sm4-C1-d9j" firstAttribute="leading" secondItem="gFs-gR-Spv" secondAttribute="leading" id="8Be-OA-Bf0"/>
+                            <constraint firstItem="sm4-C1-d9j" firstAttribute="trailing" secondItem="gFs-gR-Spv" secondAttribute="trailing" id="PM4-UA-mXd"/>
+                            <constraint firstItem="sm4-C1-d9j" firstAttribute="bottom" secondItem="gFs-gR-Spv" secondAttribute="top" id="alF-6S-MCz"/>
+                            <constraint firstItem="sm4-C1-d9j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="clv-ZP-SKF"/>
+                            <constraint firstItem="gFs-gR-Spv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="gWL-LA-DBL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gFs-gR-Spv" secondAttribute="bottom" id="ndP-LQ-VLE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gFs-gR-Spv" secondAttribute="trailing" constant="-20" id="uMv-kB-DpL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePickerView" destination="sm4-C1-d9j" id="JTQ-t2-ug5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="429"/>
+        </scene>
+    </scenes>
+</document>
