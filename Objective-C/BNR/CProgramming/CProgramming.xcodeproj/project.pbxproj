@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40304F581FC814D100DC0E5E /* Chapter3.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F571FC814D100DC0E5E /* Chapter3.c */; };
-		40304F5A1FC8201600DC0E5E /* Loop.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F591FC8201600DC0E5E /* Loop.c */; };
+		40304F581FC814D100DC0E5E /* 3-Variables.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F571FC814D100DC0E5E /* 3-Variables.c */; };
+		40304F5A1FC8201600DC0E5E /* 8-Loops.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F591FC8201600DC0E5E /* 8-Loops.c */; };
 		40304F5F1FC821B600DC0E5E /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 40304F5C1FC8210F00DC0E5E /* libreadline.tbd */; };
-		40304F651FC82C2300DC0E5E /* Chapter10.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F641FC82C2300DC0E5E /* Chapter10.c */; };
-		40304F671FC8308800DC0E5E /* Struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F661FC8308800DC0E5E /* Struct.c */; };
-		40304F681FC8314100DC0E5E /* Address.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F621FC8272500DC0E5E /* Address.c */; };
-		40304F6A1FC8331200DC0E5E /* Heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F691FC8331200DC0E5E /* Heap.c */; };
-		4045D1FB1FAF775600BE79C0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4045D1FA1FAF775600BE79C0 /* main.c */; };
+		40304F651FC82C2300DC0E5E /* 10-PassByReference.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F641FC82C2300DC0E5E /* 10-PassByReference.c */; };
+		40304F671FC8308800DC0E5E /* 11-Struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F661FC8308800DC0E5E /* 11-Struct.c */; };
+		40304F681FC8314100DC0E5E /* 9-Address.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F621FC8272500DC0E5E /* 9-Address.c */; };
+		40304F6A1FC8331200DC0E5E /* 12-Heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 40304F691FC8331200DC0E5E /* 12-Heap.c */; };
+		4045D1FB1FAF775600BE79C0 /* 5-Functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 4045D1FA1FAF775600BE79C0 /* 5-Functions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,15 +30,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		40304F571FC814D100DC0E5E /* Chapter3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Chapter3.c; sourceTree = "<group>"; };
-		40304F591FC8201600DC0E5E /* Loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Loop.c; sourceTree = "<group>"; };
+		40304F571FC814D100DC0E5E /* 3-Variables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "3-Variables.c"; sourceTree = "<group>"; };
+		40304F591FC8201600DC0E5E /* 8-Loops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "8-Loops.c"; sourceTree = "<group>"; };
 		40304F5C1FC8210F00DC0E5E /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
-		40304F621FC8272500DC0E5E /* Address.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Address.c; sourceTree = "<group>"; };
-		40304F641FC82C2300DC0E5E /* Chapter10.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Chapter10.c; sourceTree = "<group>"; };
-		40304F661FC8308800DC0E5E /* Struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Struct.c; sourceTree = "<group>"; };
-		40304F691FC8331200DC0E5E /* Heap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Heap.c; sourceTree = "<group>"; };
+		40304F621FC8272500DC0E5E /* 9-Address.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "9-Address.c"; sourceTree = "<group>"; };
+		40304F641FC82C2300DC0E5E /* 10-PassByReference.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "10-PassByReference.c"; sourceTree = "<group>"; };
+		40304F661FC8308800DC0E5E /* 11-Struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "11-Struct.c"; sourceTree = "<group>"; };
+		40304F691FC8331200DC0E5E /* 12-Heap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "12-Heap.c"; sourceTree = "<group>"; };
 		4045D1F71FAF775600BE79C0 /* CProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
-		4045D1FA1FAF775600BE79C0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4045D1FA1FAF775600BE79C0 /* 5-Functions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "5-Functions.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +81,13 @@
 		4045D1F91FAF775600BE79C0 /* CProgramming */ = {
 			isa = PBXGroup;
 			children = (
-				4045D1FA1FAF775600BE79C0 /* main.c */,
-				40304F571FC814D100DC0E5E /* Chapter3.c */,
-				40304F591FC8201600DC0E5E /* Loop.c */,
-				40304F621FC8272500DC0E5E /* Address.c */,
-				40304F641FC82C2300DC0E5E /* Chapter10.c */,
-				40304F661FC8308800DC0E5E /* Struct.c */,
-				40304F691FC8331200DC0E5E /* Heap.c */,
+				40304F571FC814D100DC0E5E /* 3-Variables.c */,
+				4045D1FA1FAF775600BE79C0 /* 5-Functions.c */,
+				40304F591FC8201600DC0E5E /* 8-Loops.c */,
+				40304F621FC8272500DC0E5E /* 9-Address.c */,
+				40304F641FC82C2300DC0E5E /* 10-PassByReference.c */,
+				40304F661FC8308800DC0E5E /* 11-Struct.c */,
+				40304F691FC8331200DC0E5E /* 12-Heap.c */,
 			);
 			path = CProgramming;
 			sourceTree = "<group>";
@@ -150,13 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40304F6A1FC8331200DC0E5E /* Heap.c in Sources */,
-				40304F681FC8314100DC0E5E /* Address.c in Sources */,
-				4045D1FB1FAF775600BE79C0 /* main.c in Sources */,
-				40304F5A1FC8201600DC0E5E /* Loop.c in Sources */,
-				40304F651FC82C2300DC0E5E /* Chapter10.c in Sources */,
-				40304F671FC8308800DC0E5E /* Struct.c in Sources */,
-				40304F581FC814D100DC0E5E /* Chapter3.c in Sources */,
+				40304F6A1FC8331200DC0E5E /* 12-Heap.c in Sources */,
+				40304F681FC8314100DC0E5E /* 9-Address.c in Sources */,
+				4045D1FB1FAF775600BE79C0 /* 5-Functions.c in Sources */,
+				40304F5A1FC8201600DC0E5E /* 8-Loops.c in Sources */,
+				40304F651FC82C2300DC0E5E /* 10-PassByReference.c in Sources */,
+				40304F671FC8308800DC0E5E /* 11-Struct.c in Sources */,
+				40304F581FC814D100DC0E5E /* 3-Variables.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
