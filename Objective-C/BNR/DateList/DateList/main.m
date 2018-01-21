@@ -15,6 +15,12 @@ int main(int argc, const char * argv[]) {
         
 //chapter 17 - NSArray
         
+        /*
+          id selectedDog = dogs[tableView selectedRow] instead of this
+         use
+         id selectedDog = [dogs objkectAtIndex:[tableView selectedRow]];
+         */
+        
         
         NSDate *now = [NSDate date];
         NSDate *yesterday = [now dateByAddingTimeInterval:-24*60*60];

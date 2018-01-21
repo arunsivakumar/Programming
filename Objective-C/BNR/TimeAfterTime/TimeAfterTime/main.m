@@ -6,29 +6,53 @@
 //  Copyright © 2017 com.arunsivakumar. All rights reserved.
 //
 
+
+
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
-// chapter 13 - Objects
         
-        NSDate *now = [NSDate date];
-        NSLog(@"This date lves at %p",now);
-        NSLog(@"The date is now %@",now);
+    
         
-        double seconds = [now timeIntervalSince1970];
+        /*
+         chapter 13 - Objects
+         
+         Stuct - members
+         Class - instance variables (ivar), methods
+         #import - is much faster and compiler checks if another calss already imported it
+         NSLog - prefaces with date, time, process ID
+         
+         */
+        
+        NSDate *now = [NSDate date]; // NSDate claims some memory, init with current date and time,(date) class method
+        NSLog(@"This date lives at %p",now);
+        NSLog(@"The date is now %@",now); // %@ description of itself
+        
+        double seconds = [now timeIntervalSince1970]; // (timeIntervalSince1970)instance method
         NSLog(@"The diff in seconds %f",seconds);
         
         // challenge
         
-//        NSHost *host = [NSHost currentHost];
-//        NSString *name = [host localizedName];
-//        NSLog(@"the current host is %@",host);
-//        NSLog(@"the current host is %@",name);
+        //        NSHost *host = [NSHost currentHost];
+        //        NSString *name = [host localizedName];
+        //        NSLog(@"the current host is %@",host);
+        //        NSLog(@"the current host is %@",name);
         
         
-// chapter 14 - More Messages
+        /*
+         chapter 14 - More Messages
+        
+    
+         dont nest message sends except for allc and init
+         
+         // NSDate *now = [NSDate date]; // convinience method
+         
+         id delegate; //pointer to unknown type
+         
+         */
+        
+        
         
         NSDate *later = [now dateByAddingTimeInterval:100000];
         NSLog(@"The date after adding %@",later);
@@ -73,7 +97,15 @@ int main(int argc, const char * argv[]) {
         NSDate *dateOfBirth = [g dateFromComponents:comp];
         NSLog(@"The date of birth is %@",dateOfBirth);
         
-//chapter 15 Objects and Memory
+        
+        
+        /*
+         chapter 15 Objects and Memory
+         
+         pointing to a new object will loose the reference to current object
+         
+         */
+        
         
         NSDate *currentTime = [NSDate date];
         NSLog(@"current time is %p",currentTime);
@@ -86,7 +118,24 @@ int main(int argc, const char * argv[]) {
         NSLog(@"current time is %p",currentTime);
         NSLog(@"current time is %p",startTime);
         
-//chapter 16 - NSString
+        
+        
+        /*
+         chapter 16 - NSString
+         
+         no explicit message sent to create a instance 
+         can contain unicode \u(number)
+         stringWithformat - Create Dynamically
+         
+         - instance method + class method
+         
+         -(NSUI)length
+         
+         
+         */
+        
+        
+        
         NSString *slogan = @"I \u2261 New York!";
         NSLog(@"%@",slogan);
         
