@@ -48,8 +48,8 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Employee %u hired on %@",mikey.employeeID, mikey.hireDate);
         
-        double yearsOFEmployment = [mikey yearsOFEmployment];
-        NSLog(@"Employed with us for %.2f years",yearsOFEmployment);
+        double yearsOfEmployment = [mikey yearsOfEmployment];
+        NSLog(@"Employed with us for %.2f years",yearsOfEmployment);
     }
     return 0;
 }

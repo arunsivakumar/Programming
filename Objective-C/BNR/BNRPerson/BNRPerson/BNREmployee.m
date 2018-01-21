@@ -7,11 +7,25 @@
 //
 
 #import "BNREmployee.h"
+#import "BNRAsset.h"
+
+@interface BNREmployee()
+@property (nonatomic) unsigned int officeAlarmCode;
+@end
 
 @implementation BNREmployee
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<Employee %u, $%u in assets>", self.employeeID, self.valueOfAssets];
+}
 
--(double)yearsOFEmployment{
+- (void)dealloc
+{
+    NSLog(@"deallocating %@", self);
+}
+
+-(double)yearsOfEmployment{
     
     if(self.hireDate){
         // NSTimeInterval is the same as double
@@ -22,6 +36,32 @@
     }else{
         return 0;
     }
+}
+
+-(void)setAssets:(NSArray *)a{
+     _assets = [a mutableCopy];
+}
+
+-(NSArray *)assets{
+    return [_assets copy];
+}
+
+
+-(void)addAsset:(BNRAsset *)a{
+   
+    if(!_assets){
+        _assets = [[NSMutableArray alloc] init];
+    }
+    [_assets addObject:a];
+}
+
+-(unsigned int)valueOfAssets{
+    unsigned int sum = 0;
+    
+    for(BNRAsset *a in _assets){
+        sum += [a resaleValue];
+    }
+    return sum;
 }
 
 -(float)bodyMassIndex{
