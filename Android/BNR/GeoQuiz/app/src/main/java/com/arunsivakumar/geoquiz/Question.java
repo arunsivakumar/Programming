@@ -35,7 +35,7 @@ public class Question {
         return mUserAnswered;
     }
 
-    public void setUserAnswered(boolean mUserAnswered) {
-        this.mUserAnswered = mUserAnswered;
+    public void setUserAnswered(boolean userAnswered) {
+        mUserAnswered = userAnswered;
     }
 }
