@@ -1,0 +1,12 @@
+Goal: Create a basic class called Book.
+
+Directions:
+
+1) Create a new class called Book.
+2) Create fields for title, author, numPages, and isbn.
+3) Create a method called toString that appropriately describes the book.
+4) In the file, BookRunner.java:
+  a) Declare two book variables
+  b) Instantiate two book objects and set their fields.
+  c) Print descriptions of the book objects using their toString methods.
+
