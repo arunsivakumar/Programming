@@ -1,19 +1,10 @@
 package com.arunsivakumar.geoquiz;
 
-/**
- * Created by Arun on 6/6/17.
- */
-
 public class Question {
+
 
     private int mTextResId;
     private boolean mAnswerTrue;
-    private boolean mUserAnswered;
-
-   public Question(int textResId,boolean answerTrue){
-       mTextResId = textResId;
-       mAnswerTrue = answerTrue;
-   }
 
     public int getTextResId() {
         return mTextResId;
@@ -31,11 +22,8 @@ public class Question {
         mAnswerTrue = answerTrue;
     }
 
-    public boolean isUserAnswered() {
-        return mUserAnswered;
-    }
-
-    public void setUserAnswered(boolean userAnswered) {
-        mUserAnswered = userAnswered;
+    public Question(int textResId, boolean answerTrue){
+        mTextResId = textResId;
+        mAnswerTrue = answerTrue;
     }
 }
