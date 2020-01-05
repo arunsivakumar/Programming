@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F40130E423C24381008ABF64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40130E323C24381008ABF64 /* SceneDelegate.swift */; };
 		F40130E623C24F2A008ABF64 /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40130E523C24F2A008ABF64 /* BuyCoordinator.swift */; };
+		F40130E823C25AC3008ABF64 /* AccountCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40130E723C25AC3008ABF64 /* AccountCreating.swift */; };
+		F40130EA23C25BAA008ABF64 /* Buying.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40130E923C25BAA008ABF64 /* Buying.swift */; };
 		F4F8852423C2343600F49AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8852323C2343600F49AE2 /* AppDelegate.swift */; };
 		F4F8852823C2343600F49AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8852723C2343600F49AE2 /* ViewController.swift */; };
 		F4F8852B23C2343600F49AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F8852923C2343600F49AE2 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		F40130E323C24381008ABF64 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F40130E523C24F2A008ABF64 /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
+		F40130E723C25AC3008ABF64 /* AccountCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreating.swift; sourceTree = "<group>"; };
+		F40130E923C25BAA008ABF64 /* Buying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buying.swift; sourceTree = "<group>"; };
 		F4F8852023C2343600F49AE2 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F8852323C2343600F49AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F8852723C2343600F49AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				F4F8855B23C238C800F49AE2 /* CreateAccountViewController.swift */,
 				F40130E523C24F2A008ABF64 /* BuyCoordinator.swift */,
 				F4F8855523C2356900F49AE2 /* MainCoordinator.swift */,
+				F40130E723C25AC3008ABF64 /* AccountCreating.swift */,
+				F40130E923C25BAA008ABF64 /* Buying.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -278,10 +284,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F40130E623C24F2A008ABF64 /* BuyCoordinator.swift in Sources */,
+				F40130EA23C25BAA008ABF64 /* Buying.swift in Sources */,
 				F4F8855423C2348D00F49AE2 /* Storyboarded.swift in Sources */,
 				F4F8852823C2343600F49AE2 /* ViewController.swift in Sources */,
 				F4F8855823C2357D00F49AE2 /* Coordinator.swift in Sources */,
 				F4F8852423C2343600F49AE2 /* AppDelegate.swift in Sources */,
+				F40130E823C25AC3008ABF64 /* AccountCreating.swift in Sources */,
 				F4F8855C23C238C800F49AE2 /* CreateAccountViewController.swift in Sources */,
 				F4F8855623C2356900F49AE2 /* MainCoordinator.swift in Sources */,
 				F4F8855A23C238B900F49AE2 /* BuyViewController.swift in Sources */,

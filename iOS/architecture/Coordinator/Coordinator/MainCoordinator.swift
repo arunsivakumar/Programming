@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainCoordinator: NSObject, Coordinator {
+class MainCoordinator: NSObject, Coordinator, Buying, AccountCreating {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
