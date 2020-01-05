@@ -13,13 +13,16 @@ class BuyCoordinator: Coordinator {
     weak var parentCoordinator: MainCoordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
+    let productType: Int
 
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, productType: Int) {
         self.navigationController = navigationController
+        self.productType = productType
     }
 
     func start() {
         let vc = BuyViewController.instantiate()
+        vc.selectedProduct = productType
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }

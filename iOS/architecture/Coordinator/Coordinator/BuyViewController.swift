@@ -17,6 +17,7 @@ class BuyViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print(selectedProduct)
     }
     
 //    override func viewDidDisappear(_ animated: Bool) {

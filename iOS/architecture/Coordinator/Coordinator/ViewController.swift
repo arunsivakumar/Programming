@@ -18,7 +18,7 @@ class ViewController: UIViewController, Storyboarded {
         // Do any additional setup after loading the view.
     }
     @IBAction func buy(_ sender: UIButton) {
-        coordinator?.buySubscription()
+        coordinator?.buySubscription(to: 1)
     }
     
     @IBAction func createAccount(_ sender: UIButton) {
