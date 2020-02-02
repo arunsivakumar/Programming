@@ -25,18 +25,18 @@
     //   32 , 64, 128
     // %f , %f , %e
     
-    unsigned int x = -25;
-    char c = 'A';
-    
-    NSInteger i = -5;
-    NSUInteger j = -6;
-    
-    //printf("%d \n", sizeof(float));
-    
-   // printf("%.2f \n",sin(1));
-    
-    //printf("The absolute value of -x is %d\n",abs(x));
-    
+//    unsigned int x = -25;
+//    char c = 'A';
+//    
+//    NSInteger i = -5;
+//    NSUInteger j = -6;
+//    
+//    printf("%d \n", sizeof(float));
+//    
+//    printf("%.2f \n",sin(1));
+//    
+//    printf("The absolute value of -x is %d\n",abs(x));
+//    
 //    printf("Here they are: %ld,%lu \n",i,j);
 //    
 //    
