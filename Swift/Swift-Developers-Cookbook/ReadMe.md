@@ -7,3 +7,5 @@ https://developer.apple.com/swift/blog/
 https://developer.apple.com/swift/resources/  
 https://asciiwwdc.com  
 https://developer.apple.com/swift/  
+
+# 2: Printing & Mirroring
