@@ -1,32 +1,67 @@
 
 //: # PART 2 BASICS
+
+//: ## CHAPTER 3 - CONDITIONALS if/else
 var population: Int = 5422
 var message: String
+var hasPostOffice: Bool = true
+
 if population < 10000 {
 message = "\(population) is a small town!"
+} else if population >= 10000 && population < 50000 {
+    message = "\(population) is a medium town!"
 } else {
 message = "\(population) is pretty big!"
 }
 print(message)
 print("Hello World")
-//: ## CHAPTER 3 - CONDITIONALS if/else
 
+if hasPostOffice {
+    print("where do they buy stamps?")
+}
 //: ---
 
 
 //: ## CHAPTER 4 - NUMBERS
+print("\(Int.max)")
+print("\(Int.min)")
+print("\(UInt.max)")
+print("\(UInt.min)")
 
-
-//: ---
+let x: Int8 = 120
+let z = x &+ 10
+//let a = 7.0 % 3.5
+////: ---
+let d1 = 1.1
+let d2 = 1.1
+if (d1 + 0.1 == 1.2) {
+    print("d1 and d2 are same")
+} else {
+    print(d1 + 0.1)
+    print("not same")
+}
 
 
 //: ## CHAPTER 5 - SWITCH
 //: * Should have atleast one statement
 //: * Range is inclusive
 //: * Interval Matching (Range ...), Pattern Matching (Tuples)
-var statusCode = 200;
-var errorString = "The request failed:"
+var statusCode = 203;
+var errorString: String = "The request failed: "
 
+switch statusCode {
+case 200:
+    errorString += "no error:"
+    fallthrough
+case 400...499:
+    errorString += "error:"
+case let unknownCode where (unknownCode >= 200 && unknownCode < 300 || unknownCode > 505):
+    errorString += "\(unknownCode) is not an error code."
+default:
+    errorString += "please review the request"
+}
+
+print(errorString)
 //: ###### Value Binding
 //:
 switch statusCode {
@@ -47,7 +82,22 @@ print(errorString)
 
 //: ###### Tuples and Pattern Matching
 //: * Naming tuples
-let networkError = (code: statusCode,error: errorString)
+let networkError = (code: statusCode, error: errorString)
+
+
+switch statusCode {
+case 200:
+    errorString += "no error:"
+    fallthrough
+case 400...499:
+    errorString += "error:"
+case let unknownCode where (unknownCode >= 200 && unknownCode < 300 || unknownCode > 505):
+    errorString += "\(unknownCode) is not an error code."
+default:
+    errorString += "please review the request"
+}
+
+print(errorString)
 //networkError.0
 //networkError.1
 
