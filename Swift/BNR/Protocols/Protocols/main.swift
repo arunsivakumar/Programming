@@ -8,9 +8,6 @@
 
 import Foundation
 
-
-//func printTable(_ data:[[String]],withColumnLabels columnLabels:String...){
-
 protocol TabularDataSource{
     var numberOfRows:Int{get} //conforming could have read write
     var numberOfColumns:Int{get}
@@ -23,42 +20,50 @@ protocol TabularDataSource{
 func printTable(_ dataSource:TabularDataSource & CustomStringConvertible){
     print("Table: \(dataSource.description)")
     
+    
     var firstRow = "|"
     
     // keep track of columns
     var columnWidths = [Int]()
     
+    // Computation: fnd max column width - o(n)
+    
+    for i in 0 ..< dataSource.numberOfColumns{
+         let columnLabel = dataSource.label(forColumn: i)
+         columnWidths.append(columnLabel.count)
+    }
     
     
-//    for columnLabel in columnLabels{
+    for i in 0 ..< dataSource.numberOfRows{
+        for j in 0 ..< dataSource.numberOfColumns{
+            let item = dataSource.itemFor(row: i, column: j)
+            if item.count > columnWidths[j] {
+                columnWidths[j] = item.count
+            }
+        }
+    }
+    
+    
+    
+    //    for columnLabel in columnLabels{
     for i in 0 ..< dataSource.numberOfColumns{
         
         let columnLabel = dataSource.label(forColumn: i)
-        let columnHeader = " \(columnLabel) |"
-        firstRow += columnHeader
-        columnWidths.append(columnLabel.characters.count)
+        let paddingNeeded = abs(columnWidths[i] - columnLabel.count)
+        let padding = repeatElement(" ", count: paddingNeeded).joined(separator: "")
+        firstRow += " \(padding)\(columnLabel) |"
     }
-    
     print(firstRow)
     
-//    for row in data{
-        for i in 0 ..< dataSource.numberOfRows{
-
+    for i in 0 ..< dataSource.numberOfRows{
+        
         var out = "|"
         
-        // append each item to string
-        
-//        for item in row{
-//            out+="\(item) |"
-//            
-//        }
-        
-//        for(j,item) in row.enumerated(){
         for j in 0 ..< dataSource.numberOfColumns{
             
             let item = dataSource.itemFor(row: i, column: j)
-
-            let paddingNeeded = abs(columnWidths[j] - item.characters.count)
+            
+            let paddingNeeded = abs(columnWidths[j] - item.count)
             let padding = repeatElement(" ", count: paddingNeeded).joined(separator: "")
             out += " \(padding)\(item) |"
         }
@@ -67,14 +72,6 @@ func printTable(_ dataSource:TabularDataSource & CustomStringConvertible){
         print(out)
     }
 }
-
-//let data = [
-//    ["joe","30","6"],
-//    ["karen","34","56"],
-//    ["fred","34","56"]
-//]
-
-//printTable(data,withColumnLabels: "Employee Name","Age","Years of experience")
 
 
 
