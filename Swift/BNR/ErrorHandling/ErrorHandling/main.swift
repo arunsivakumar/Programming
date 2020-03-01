@@ -9,43 +9,43 @@
 import Foundation
 
 
-enum Token{
+enum Token {
     case number(Int)
     case plus
     case minus
 }
 
 
-class Lexer{
+class Lexer {
     
-    enum Error:Swift.Error{
+    enum Error: Swift.Error {
         case invalidCharacter(Character)
     }
     
-    let input:String.CharacterView
-    var position:String.CharacterView.Index
+    let input: String
+    var position: String.Index
     
-    init(input:String){
-        self.input = input.characters
+    init(input: String) {
+        self.input = input
         self.position = self.input.startIndex
     }
     
-    func peek()->Character?{
+    func peek() -> Character? {
         guard position < input.endIndex else{
             return nil
         }
         return input[position]
     }
     
-    func advance(){
+    func advance() {
         assert(position < input.endIndex, "Cannot advance past endIndex!")
         position = input.index(after: position)
     }
     
-    func getNumber()-> Int{
+    func getNumber() -> Int {
         var value = 0
         
-        while let nextCharacter = peek(){
+        while let nextCharacter = peek() {
             switch nextCharacter {
             case "0" ... "9":
                 // andther digit add it to value
@@ -60,10 +60,10 @@ class Lexer{
         return value
     }
     
-    func lex() throws -> [Token]{
+    func lex() throws -> [Token] {
         var tokens = [Token]()
         
-        while let nextCharacter = peek(){
+        while let nextCharacter = peek() {
             switch nextCharacter {
             case "0" ... "9":
                 // start of a number grab the rest
@@ -103,13 +103,9 @@ class Lexer{
 //evaluate("10 + 34 + 5")
 //evaluate("1 + 2 + abcdef")
 
-
-
-
-
-class Parser{
+class Parser {
     
-    enum Error:Swift.Error{
+    enum Error:Swift.Error {
         case unexpectedEndOfInput
         case invalidToken(Token)
     }
@@ -119,12 +115,12 @@ class Parser{
     var position = 0
     
     
-    init(tokens:[Token]){
+    init(tokens:[Token]) {
         self.tokens = tokens
     }
     
     
-    func getNextToken() -> Token?{
+    func getNextToken() -> Token? {
         guard position < tokens.count else{
             return nil
         }
@@ -134,7 +130,7 @@ class Parser{
         return token
     }
     
-    func getNumber() throws -> Int{
+    func getNumber() throws -> Int {
         guard let token = getNextToken() else{
             throw Parser.Error.unexpectedEndOfInput
         }
@@ -150,7 +146,7 @@ class Parser{
     
     }
     
-    func parse() throws -> Int{
+    func parse() throws -> Int {
         
         //  first one should always be a numnber
         var value = try getNumber()
@@ -177,11 +173,14 @@ class Parser{
         return value
     }
 }
+
 // takeaway
 // 1. Errors thrown - need not stick with a particular error type
 // 2. handle error unknown type in catch
+
 func evaluate(_ input: String) {
     print("Evaluating: \(input)")
+    
     let lexer = Lexer(input: input)
     
     do {
