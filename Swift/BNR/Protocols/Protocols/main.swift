@@ -26,7 +26,7 @@ func printTable(_ dataSource:TabularDataSource & CustomStringConvertible){
     // keep track of columns
     var columnWidths = [Int]()
     
-    // Computation: fnd max column width - o(n)
+    // Computation: find max column width - o(n)
     
     for i in 0 ..< dataSource.numberOfColumns{
          let columnLabel = dataSource.label(forColumn: i)
