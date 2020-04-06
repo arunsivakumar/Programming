@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Converter.xcscheme_^#shared#^_</key>
+		<key>XCTestSandBox.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F4998529243B1A9C00EB7E61</key>
+		<key>F4998569243B276A00EB7E61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F499853F243B1A9C00EB7E61</key>
+		<key>F499857F243B276A00EB7E61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F499854A243B1A9D00EB7E61</key>
+		<key>F499858A243B276A00EB7E61</key>
 		<dict>
 			<key>primary</key>
 			<true/>

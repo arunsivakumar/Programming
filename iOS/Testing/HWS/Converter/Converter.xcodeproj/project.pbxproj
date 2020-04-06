@@ -13,9 +13,9 @@
 		F4998535243B1A9C00EB7E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4998533243B1A9C00EB7E61 /* Main.storyboard */; };
 		F4998537243B1A9C00EB7E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4998536243B1A9C00EB7E61 /* Assets.xcassets */; };
 		F499853A243B1A9C00EB7E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4998538243B1A9C00EB7E61 /* LaunchScreen.storyboard */; };
-		F4998545243B1A9C00EB7E61 /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4998544243B1A9C00EB7E61 /* ConverterTests.swift */; };
 		F4998550243B1A9D00EB7E61 /* ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499854F243B1A9D00EB7E61 /* ConverterUITests.swift */; };
 		F499855E243B1ADC00EB7E61 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499855D243B1ADC00EB7E61 /* Converter.swift */; };
+		F4998560243B203900EB7E61 /* LifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499855F243B203900EB7E61 /* LifeCycle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,7 @@
 		F499854F243B1A9D00EB7E61 /* ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterUITests.swift; sourceTree = "<group>"; };
 		F4998551243B1A9D00EB7E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F499855D243B1ADC00EB7E61 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		F499855F243B203900EB7E61 /* LifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +119,7 @@
 			children = (
 				F4998544243B1A9C00EB7E61 /* ConverterTests.swift */,
 				F4998546243B1A9C00EB7E61 /* Info.plist */,
+				F499855F243B203900EB7E61 /* LifeCycle.swift */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -273,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4998545243B1A9C00EB7E61 /* ConverterTests.swift in Sources */,
+				F4998560243B203900EB7E61 /* LifeCycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
