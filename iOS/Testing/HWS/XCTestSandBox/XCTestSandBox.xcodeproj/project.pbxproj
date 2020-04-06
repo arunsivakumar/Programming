@@ -17,6 +17,9 @@
 		F4998590243B276A00EB7E61 /* XCTestSandBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499858F243B276A00EB7E61 /* XCTestSandBoxUITests.swift */; };
 		F49985A0243B594400EB7E61 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499859F243B594400EB7E61 /* Game.swift */; };
 		F49985A2243B595900EB7E61 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985A1243B595900EB7E61 /* GameTests.swift */; };
+		F49985AA243B623800EB7E61 /* AsynchronousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985A9243B623800EB7E61 /* AsynchronousTests.swift */; };
+		F49985B2243B634E00EB7E61 /* PrimaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985B1243B634E00EB7E61 /* PrimaCalculator.swift */; };
+		F49985B4243B63BB00EB7E61 /* PrimeCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985B3243B63BB00EB7E61 /* PrimeCalculatorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,13 @@
 			remoteInfo = XCTestSandBox;
 		};
 		F499858C243B276A00EB7E61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4998562243B276A00EB7E61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4998569243B276A00EB7E61;
+			remoteInfo = XCTestSandBox;
+		};
+		F49985AC243B623800EB7E61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4998562243B276A00EB7E61 /* Project object */;
 			proxyType = 1;
@@ -53,6 +63,11 @@
 		F4998591243B276A00EB7E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F499859F243B594400EB7E61 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F49985A1243B595900EB7E61 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		F49985A7243B623800EB7E61 /* AsynchronousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsynchronousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49985A9243B623800EB7E61 /* AsynchronousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTests.swift; sourceTree = "<group>"; };
+		F49985AB243B623800EB7E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49985B1243B634E00EB7E61 /* PrimaCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaCalculator.swift; sourceTree = "<group>"; };
+		F49985B3243B63BB00EB7E61 /* PrimeCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculatorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F49985A4243B623800EB7E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +108,7 @@
 				F499856C243B276A00EB7E61 /* XCTestSandBox */,
 				F4998583243B276A00EB7E61 /* XCTestSandBoxTests */,
 				F499858E243B276A00EB7E61 /* XCTestSandBoxUITests */,
+				F49985A8243B623800EB7E61 /* AsynchronousTests */,
 				F499856B243B276A00EB7E61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +119,7 @@
 				F499856A243B276A00EB7E61 /* XCTestSandBox.app */,
 				F4998580243B276A00EB7E61 /* XCTestSandBoxTests.xctest */,
 				F499858B243B276A00EB7E61 /* XCTestSandBoxUITests.xctest */,
+				F49985A7243B623800EB7E61 /* AsynchronousTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				F499859F243B594400EB7E61 /* Game.swift */,
+				F49985B1243B634E00EB7E61 /* PrimaCalculator.swift */,
 			);
 			path = Chapter2;
 			sourceTree = "<group>";
@@ -146,8 +171,18 @@
 			isa = PBXGroup;
 			children = (
 				F49985A1243B595900EB7E61 /* GameTests.swift */,
+				F49985B3243B63BB00EB7E61 /* PrimeCalculatorTest.swift */,
 			);
 			path = Chapter2;
+			sourceTree = "<group>";
+		};
+		F49985A8243B623800EB7E61 /* AsynchronousTests */ = {
+			isa = PBXGroup;
+			children = (
+				F49985A9243B623800EB7E61 /* AsynchronousTests.swift */,
+				F49985AB243B623800EB7E61 /* Info.plist */,
+			);
+			path = AsynchronousTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +241,24 @@
 			productReference = F499858B243B276A00EB7E61 /* XCTestSandBoxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F49985A6243B623800EB7E61 /* AsynchronousTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49985AE243B623800EB7E61 /* Build configuration list for PBXNativeTarget "AsynchronousTests" */;
+			buildPhases = (
+				F49985A3243B623800EB7E61 /* Sources */,
+				F49985A4243B623800EB7E61 /* Frameworks */,
+				F49985A5243B623800EB7E61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49985AD243B623800EB7E61 /* PBXTargetDependency */,
+			);
+			name = AsynchronousTests;
+			productName = AsynchronousTests;
+			productReference = F49985A7243B623800EB7E61 /* AsynchronousTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,6 +280,10 @@
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = F4998569243B276A00EB7E61;
 					};
+					F49985A6243B623800EB7E61 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F4998569243B276A00EB7E61;
+					};
 				};
 			};
 			buildConfigurationList = F4998565243B276A00EB7E61 /* Build configuration list for PBXProject "XCTestSandBox" */;
@@ -245,6 +302,7 @@
 				F4998569243B276A00EB7E61 /* XCTestSandBox */,
 				F499857F243B276A00EB7E61 /* XCTestSandBoxTests */,
 				F499858A243B276A00EB7E61 /* XCTestSandBoxUITests */,
+				F49985A6243B623800EB7E61 /* AsynchronousTests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +332,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F49985A5243B623800EB7E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -285,6 +350,7 @@
 				F499856E243B276A00EB7E61 /* AppDelegate.swift in Sources */,
 				F4998570243B276A00EB7E61 /* SceneDelegate.swift in Sources */,
 				F49985A0243B594400EB7E61 /* Game.swift in Sources */,
+				F49985B2243B634E00EB7E61 /* PrimaCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +360,7 @@
 			files = (
 				F4998585243B276A00EB7E61 /* XCTestSandBoxTests.swift in Sources */,
 				F49985A2243B595900EB7E61 /* GameTests.swift in Sources */,
+				F49985B4243B63BB00EB7E61 /* PrimeCalculatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +369,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4998590243B276A00EB7E61 /* XCTestSandBoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49985A3243B623800EB7E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49985AA243B623800EB7E61 /* AsynchronousTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +392,11 @@
 			isa = PBXTargetDependency;
 			target = F4998569243B276A00EB7E61 /* XCTestSandBox */;
 			targetProxy = F499858C243B276A00EB7E61 /* PBXContainerItemProxy */;
+		};
+		F49985AD243B623800EB7E61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4998569243B276A00EB7E61 /* XCTestSandBox */;
+			targetProxy = F49985AC243B623800EB7E61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -574,6 +654,46 @@
 			};
 			name = Release;
 		};
+		F49985AF243B623800EB7E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5S947L7K7;
+				INFOPLIST_FILE = AsynchronousTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arunsivakumar.AsynchronousTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCTestSandBox.app/XCTestSandBox";
+			};
+			name = Debug;
+		};
+		F49985B0243B623800EB7E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5S947L7K7;
+				INFOPLIST_FILE = AsynchronousTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arunsivakumar.AsynchronousTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCTestSandBox.app/XCTestSandBox";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -609,6 +729,15 @@
 			buildConfigurations = (
 				F499859B243B276A00EB7E61 /* Debug */,
 				F499859C243B276A00EB7E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49985AE243B623800EB7E61 /* Build configuration list for PBXNativeTarget "AsynchronousTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49985AF243B623800EB7E61 /* Debug */,
+				F49985B0243B623800EB7E61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

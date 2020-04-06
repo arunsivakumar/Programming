@@ -1,15 +1,14 @@
 //
-//  XCTestSandBoxTests.swift
-//  XCTestSandBoxTests
+//  AsynchronousTests.swift
+//  AsynchronousTests
 //
 //  Created by Arun Sivakumar on 6/4/20.
 //  Copyright © 2020 Arun Sivakumar. All rights reserved.
 //
-//
-import XCTest
-@testable import XCTestSandBox
 
-class XCTestSandBoxTests: XCTestCase {
+import XCTest
+
+class AsynchronousTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,8 +25,9 @@ class XCTestSandBoxTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
+
 }

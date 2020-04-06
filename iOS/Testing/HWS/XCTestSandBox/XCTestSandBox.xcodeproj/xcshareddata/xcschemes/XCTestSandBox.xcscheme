@@ -52,6 +52,16 @@
                ReferencedContainer = "container:XCTestSandBox.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F49985A6243B623800EB7E61"
+               BuildableName = "AsynchronousTests.xctest"
+               BlueprintName = "AsynchronousTests"
+               ReferencedContainer = "container:XCTestSandBox.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
