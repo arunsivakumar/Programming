@@ -20,6 +20,16 @@
 		F49985AA243B623800EB7E61 /* AsynchronousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985A9243B623800EB7E61 /* AsynchronousTests.swift */; };
 		F49985B2243B634E00EB7E61 /* PrimaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985B1243B634E00EB7E61 /* PrimaCalculator.swift */; };
 		F49985B4243B63BB00EB7E61 /* PrimeCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985B3243B63BB00EB7E61 /* PrimeCalculatorTest.swift */; };
+		F49985BB243B737500EB7E61 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985BA243B737500EB7E61 /* App.swift */; };
+		F49985BD243B75B000EB7E61 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985BC243B75B000EB7E61 /* AppTests.swift */; };
+		F49985C2243B7E7000EB7E61 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985C0243B7D5500EB7E61 /* ShareViewController.swift */; };
+		F49985C4243B7E8300EB7E61 /* ShareViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985C3243B7E8300EB7E61 /* ShareViewControllerTests.swift */; };
+		F49985C5243B7ECF00EB7E61 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985BE243B789900EB7E61 /* Tweet.swift */; };
+		F49985C7243B829100EB7E61 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985C6243B829100EB7E61 /* URLHandler.swift */; };
+		F49985C9243B865300EB7E61 /* Houses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985C8243B865300EB7E61 /* Houses.swift */; };
+		F49985CD243B86A400EB7E61 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985CC243B86A400EB7E61 /* HouseTests.swift */; };
+		F49985CF243B8A0B00EB7E61 /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985CE243B8A0B00EB7E61 /* PowerMonitor.swift */; };
+		F49985D3243B8AF500EB7E61 /* PowerMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985D2243B8AF500EB7E61 /* PowerMonitorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +78,17 @@
 		F49985AB243B623800EB7E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49985B1243B634E00EB7E61 /* PrimaCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaCalculator.swift; sourceTree = "<group>"; };
 		F49985B3243B63BB00EB7E61 /* PrimeCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculatorTest.swift; sourceTree = "<group>"; };
+		F49985B9243B70EE00EB7E61 /* Chapter3.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Chapter3.md; sourceTree = "<group>"; };
+		F49985BA243B737500EB7E61 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		F49985BC243B75B000EB7E61 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
+		F49985BE243B789900EB7E61 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		F49985C0243B7D5500EB7E61 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		F49985C3243B7E8300EB7E61 /* ShareViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewControllerTests.swift; sourceTree = "<group>"; };
+		F49985C6243B829100EB7E61 /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
+		F49985C8243B865300EB7E61 /* Houses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houses.swift; sourceTree = "<group>"; };
+		F49985CC243B86A400EB7E61 /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
+		F49985CE243B8A0B00EB7E61 /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
+		F49985D2243B8AF500EB7E61 /* PowerMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +155,9 @@
 				F4998576243B276A00EB7E61 /* Assets.xcassets */,
 				F4998578243B276A00EB7E61 /* LaunchScreen.storyboard */,
 				F499857B243B276A00EB7E61 /* Info.plist */,
-				F499859D243B58F100EB7E61 /* Chapter2 */,
+				F499859D243B58F100EB7E61 /* UnitTesting */,
+				F49985B5243B700B00EB7E61 /* Test Doubles */,
+				F49985D4243B90AE00EB7E61 /* TDD */,
 			);
 			path = XCTestSandBox;
 			sourceTree = "<group>";
@@ -144,7 +167,8 @@
 			children = (
 				F4998584243B276A00EB7E61 /* XCTestSandBoxTests.swift */,
 				F4998586243B276A00EB7E61 /* Info.plist */,
-				F499859E243B58FD00EB7E61 /* Chapter2 */,
+				F499859E243B58FD00EB7E61 /* UnitTesting */,
+				F49985B6243B701D00EB7E61 /* TestDoubles */,
 			);
 			path = XCTestSandBoxTests;
 			sourceTree = "<group>";
@@ -158,22 +182,22 @@
 			path = XCTestSandBoxUITests;
 			sourceTree = "<group>";
 		};
-		F499859D243B58F100EB7E61 /* Chapter2 */ = {
+		F499859D243B58F100EB7E61 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
 				F499859F243B594400EB7E61 /* Game.swift */,
 				F49985B1243B634E00EB7E61 /* PrimaCalculator.swift */,
 			);
-			path = Chapter2;
+			path = UnitTesting;
 			sourceTree = "<group>";
 		};
-		F499859E243B58FD00EB7E61 /* Chapter2 */ = {
+		F499859E243B58FD00EB7E61 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
 				F49985A1243B595900EB7E61 /* GameTests.swift */,
 				F49985B3243B63BB00EB7E61 /* PrimeCalculatorTest.swift */,
 			);
-			path = Chapter2;
+			path = UnitTesting;
 			sourceTree = "<group>";
 		};
 		F49985A8243B623800EB7E61 /* AsynchronousTests */ = {
@@ -183,6 +207,38 @@
 				F49985AB243B623800EB7E61 /* Info.plist */,
 			);
 			path = AsynchronousTests;
+			sourceTree = "<group>";
+		};
+		F49985B5243B700B00EB7E61 /* Test Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				F49985B9243B70EE00EB7E61 /* Chapter3.md */,
+				F49985BA243B737500EB7E61 /* App.swift */,
+				F49985BE243B789900EB7E61 /* Tweet.swift */,
+				F49985C0243B7D5500EB7E61 /* ShareViewController.swift */,
+				F49985C6243B829100EB7E61 /* URLHandler.swift */,
+				F49985C8243B865300EB7E61 /* Houses.swift */,
+				F49985CE243B8A0B00EB7E61 /* PowerMonitor.swift */,
+			);
+			path = "Test Doubles";
+			sourceTree = "<group>";
+		};
+		F49985B6243B701D00EB7E61 /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				F49985BC243B75B000EB7E61 /* AppTests.swift */,
+				F49985C3243B7E8300EB7E61 /* ShareViewControllerTests.swift */,
+				F49985CC243B86A400EB7E61 /* HouseTests.swift */,
+				F49985D2243B8AF500EB7E61 /* PowerMonitorTests.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		F49985D4243B90AE00EB7E61 /* TDD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TDD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,10 +403,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4998572243B276A00EB7E61 /* ViewController.swift in Sources */,
+				F49985C2243B7E7000EB7E61 /* ShareViewController.swift in Sources */,
+				F49985C9243B865300EB7E61 /* Houses.swift in Sources */,
 				F499856E243B276A00EB7E61 /* AppDelegate.swift in Sources */,
 				F4998570243B276A00EB7E61 /* SceneDelegate.swift in Sources */,
+				F49985BB243B737500EB7E61 /* App.swift in Sources */,
+				F49985C7243B829100EB7E61 /* URLHandler.swift in Sources */,
 				F49985A0243B594400EB7E61 /* Game.swift in Sources */,
 				F49985B2243B634E00EB7E61 /* PrimaCalculator.swift in Sources */,
+				F49985C5243B7ECF00EB7E61 /* Tweet.swift in Sources */,
+				F49985CF243B8A0B00EB7E61 /* PowerMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +421,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4998585243B276A00EB7E61 /* XCTestSandBoxTests.swift in Sources */,
+				F49985C4243B7E8300EB7E61 /* ShareViewControllerTests.swift in Sources */,
+				F49985BD243B75B000EB7E61 /* AppTests.swift in Sources */,
 				F49985A2243B595900EB7E61 /* GameTests.swift in Sources */,
+				F49985CD243B86A400EB7E61 /* HouseTests.swift in Sources */,
+				F49985D3243B8AF500EB7E61 /* PowerMonitorTests.swift in Sources */,
 				F49985B4243B63BB00EB7E61 /* PrimeCalculatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
