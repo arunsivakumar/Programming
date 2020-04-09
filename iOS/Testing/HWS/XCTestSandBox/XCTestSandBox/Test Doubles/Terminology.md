@@ -1,4 +1,4 @@
-#  Chapter 3
+#  Terminology
 1. dummy - fulfil parameter list
 2. Fake - In-memory database
 3. Stub - returns fixed data

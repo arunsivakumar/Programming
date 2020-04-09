@@ -1,16 +1,41 @@
 
 import UIKit
 
+protocol SharePresenter {
+    var title: String { get }
+    func shareToInstagram()
+}
+
+struct ShareViewModel: SharePresenter {
+    let title: String
+    func shareToInstagram() {
+        print("shared to instagram")
+    }
+}
+
 class ShareViewController: UIViewController {
    
     var customView: UIView!
+    var headerLabel = UILabel()
+    
+    var presenter: SharePresenter! {
+        didSet {
+            customView = ShareView(shareAction: shareContent)
+            updateUI()
+        }
+    }
     
     override func loadView() {
-        customView = ShareView(shareAction: shareContent)
+        //setUpUI()
+    }
+    
+    func updateUI() {
+        headerLabel.text = presenter.title
     }
     
     func shareContent(text: String) {
         print("Sharing text...")
+        presenter.shareToInstagram()
     }
 }
 
@@ -36,6 +61,7 @@ class ShareView: UIView {
         button.addTarget(self, action: #selector(shareTapped), for: .touchUpInside)
         
         addSubview(textField)
+        shareTapped()
         shareTapped()
     }
     

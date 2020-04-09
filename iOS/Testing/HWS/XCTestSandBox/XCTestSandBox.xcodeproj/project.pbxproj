@@ -30,6 +30,9 @@
 		F49985CD243B86A400EB7E61 /* HouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985CC243B86A400EB7E61 /* HouseTests.swift */; };
 		F49985CF243B8A0B00EB7E61 /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985CE243B8A0B00EB7E61 /* PowerMonitor.swift */; };
 		F49985D3243B8AF500EB7E61 /* PowerMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49985D2243B8AF500EB7E61 /* PowerMonitorTests.swift */; };
+		F4998662243E5DCD00EB7E61 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4998661243E5DCD00EB7E61 /* Converter.swift */; };
+		F4998664243E5DE800EB7E61 /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4998663243E5DE800EB7E61 /* ConverterTests.swift */; };
+		F4998666243E5E4700EB7E61 /* Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4998665243E5E4700EB7E61 /* Lifecycle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +81,7 @@
 		F49985AB243B623800EB7E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49985B1243B634E00EB7E61 /* PrimaCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaCalculator.swift; sourceTree = "<group>"; };
 		F49985B3243B63BB00EB7E61 /* PrimeCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculatorTest.swift; sourceTree = "<group>"; };
-		F49985B9243B70EE00EB7E61 /* Chapter3.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Chapter3.md; sourceTree = "<group>"; };
+		F49985B9243B70EE00EB7E61 /* Terminology.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Terminology.md; sourceTree = "<group>"; };
 		F49985BA243B737500EB7E61 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		F49985BC243B75B000EB7E61 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
 		F49985BE243B789900EB7E61 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
@@ -89,6 +92,9 @@
 		F49985CC243B86A400EB7E61 /* HouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTests.swift; sourceTree = "<group>"; };
 		F49985CE243B8A0B00EB7E61 /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
 		F49985D2243B8AF500EB7E61 /* PowerMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitorTests.swift; sourceTree = "<group>"; };
+		F4998661243E5DCD00EB7E61 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		F4998663243E5DE800EB7E61 /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
+		F4998665243E5E4700EB7E61 /* Lifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifecycle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +191,10 @@
 		F499859D243B58F100EB7E61 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				F4998661243E5DCD00EB7E61 /* Converter.swift */,
 				F499859F243B594400EB7E61 /* Game.swift */,
 				F49985B1243B634E00EB7E61 /* PrimaCalculator.swift */,
+				F49985C0243B7D5500EB7E61 /* ShareViewController.swift */,
 			);
 			path = UnitTesting;
 			sourceTree = "<group>";
@@ -194,8 +202,11 @@
 		F499859E243B58FD00EB7E61 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				F4998663243E5DE800EB7E61 /* ConverterTests.swift */,
+				F4998665243E5E4700EB7E61 /* Lifecycle.swift */,
 				F49985A1243B595900EB7E61 /* GameTests.swift */,
 				F49985B3243B63BB00EB7E61 /* PrimeCalculatorTest.swift */,
+				F49985C3243B7E8300EB7E61 /* ShareViewControllerTests.swift */,
 			);
 			path = UnitTesting;
 			sourceTree = "<group>";
@@ -212,10 +223,9 @@
 		F49985B5243B700B00EB7E61 /* Test Doubles */ = {
 			isa = PBXGroup;
 			children = (
-				F49985B9243B70EE00EB7E61 /* Chapter3.md */,
+				F49985B9243B70EE00EB7E61 /* Terminology.md */,
 				F49985BA243B737500EB7E61 /* App.swift */,
 				F49985BE243B789900EB7E61 /* Tweet.swift */,
-				F49985C0243B7D5500EB7E61 /* ShareViewController.swift */,
 				F49985C6243B829100EB7E61 /* URLHandler.swift */,
 				F49985C8243B865300EB7E61 /* Houses.swift */,
 				F49985CE243B8A0B00EB7E61 /* PowerMonitor.swift */,
@@ -227,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				F49985BC243B75B000EB7E61 /* AppTests.swift */,
-				F49985C3243B7E8300EB7E61 /* ShareViewControllerTests.swift */,
 				F49985CC243B86A400EB7E61 /* HouseTests.swift */,
 				F49985D2243B8AF500EB7E61 /* PowerMonitorTests.swift */,
 			);
@@ -412,6 +421,7 @@
 				F49985A0243B594400EB7E61 /* Game.swift in Sources */,
 				F49985B2243B634E00EB7E61 /* PrimaCalculator.swift in Sources */,
 				F49985C5243B7ECF00EB7E61 /* Tweet.swift in Sources */,
+				F4998662243E5DCD00EB7E61 /* Converter.swift in Sources */,
 				F49985CF243B8A0B00EB7E61 /* PowerMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,11 +432,13 @@
 			files = (
 				F4998585243B276A00EB7E61 /* XCTestSandBoxTests.swift in Sources */,
 				F49985C4243B7E8300EB7E61 /* ShareViewControllerTests.swift in Sources */,
+				F4998664243E5DE800EB7E61 /* ConverterTests.swift in Sources */,
 				F49985BD243B75B000EB7E61 /* AppTests.swift in Sources */,
 				F49985A2243B595900EB7E61 /* GameTests.swift in Sources */,
 				F49985CD243B86A400EB7E61 /* HouseTests.swift in Sources */,
 				F49985D3243B8AF500EB7E61 /* PowerMonitorTests.swift in Sources */,
 				F49985B4243B63BB00EB7E61 /* PrimeCalculatorTest.swift in Sources */,
+				F4998666243E5E4700EB7E61 /* Lifecycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
