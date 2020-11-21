@@ -13,7 +13,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-    
+        
         
         /*
          chapter 13 - Objects
@@ -34,16 +34,23 @@ int main(int argc, const char * argv[]) {
         
         // challenge
         
-        //        NSHost *host = [NSHost currentHost];
-        //        NSString *name = [host localizedName];
-        //        NSLog(@"the current host is %@",host);
-        //        NSLog(@"the current host is %@",name);
+        NSHost *host = [NSHost currentHost];
+        NSString *hostName = [host localizedName];
+        NSLog(@"the current host is %@",host);
+        NSLog(@"the current host name is %@",hostName);
         
         
         /*
          chapter 14 - More Messages
-        
-    
+         
+         
+         
+         
+         
+         
+         
+         
+         
          dont nest message sends except for allc and init
          
          // NSDate *now = [NSDate date]; // convinience method
@@ -123,7 +130,7 @@ int main(int argc, const char * argv[]) {
         /*
          chapter 16 - NSString
          
-         no explicit message sent to create a instance 
+         no explicit message sent to create a instance
          can contain unicode \u(number)
          stringWithformat - Create Dynamically
          
