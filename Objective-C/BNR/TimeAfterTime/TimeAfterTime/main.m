@@ -13,8 +13,6 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        
-        
         /*
          chapter 13 - Objects
          
@@ -24,13 +22,17 @@ int main(int argc, const char * argv[]) {
          NSLog - prefaces with date, time, process ID
          
          */
-        
+        NSLog(@"chapter 13----------------------------------\n");
+
         NSDate *now = [NSDate date]; // NSDate claims some memory, init with current date and time,(date) class method
         NSLog(@"This date lives at %p",now);
         NSLog(@"The date is now %@",now); // %@ description of itself
         
         double seconds = [now timeIntervalSince1970]; // (timeIntervalSince1970)instance method
         NSLog(@"The diff in seconds %f",seconds);
+        
+//        doubletestSeconds = [NSDate timeIntervalSince1970];
+//        NSDate *testNow = [now date];
         
         // challenge
         
@@ -39,17 +41,9 @@ int main(int argc, const char * argv[]) {
         NSLog(@"the current host is %@",host);
         NSLog(@"the current host name is %@",hostName);
         
-        
+
         /*
          chapter 14 - More Messages
-         
-         
-         
-         
-         
-         
-         
-         
          
          dont nest message sends except for allc and init
          
@@ -58,8 +52,8 @@ int main(int argc, const char * argv[]) {
          id delegate; //pointer to unknown type
          
          */
-        
-        
+        NSLog(@"chapter 14----------------------------------\n");
+
         
         NSDate *later = [now dateByAddingTimeInterval:100000];
         NSLog(@"The date after adding %@",later);
@@ -89,22 +83,21 @@ int main(int argc, const char * argv[]) {
         
         // challenge
         
-        double secondsSinceEarlierDate = [now timeIntervalSinceDate:later];
-        NSLog(@"The diff in seconds %f",secondsSinceEarlierDate);
         
         NSDateComponents *comp = [[NSDateComponents alloc] init];
-        [comp setYear:1969];
-        [comp setMonth:4];
-        [comp setDay:30];
-        [comp setHour:13];
-        [comp setMinute:10];
+        [comp setYear:1985];
+        [comp setMonth:11];
+        [comp setDay:02];
+        [comp setHour:23];
+        [comp setMinute:30];
         [comp setSecond:0];
         
         NSCalendar *g = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
         NSDate *dateOfBirth = [g dateFromComponents:comp];
         NSLog(@"The date of birth is %@",dateOfBirth);
         
-        
+        double secondsSinceEarlierDate = [now timeIntervalSinceDate:dateOfBirth];
+        NSLog(@"The diff in seconds %f",secondsSinceEarlierDate);
         
         /*
          chapter 15 Objects and Memory
@@ -112,16 +105,17 @@ int main(int argc, const char * argv[]) {
          pointing to a new object will loose the reference to current object
          
          */
-        
+        NSLog(@"chapter 15----------------------------------\n");
+
         
         NSDate *currentTime = [NSDate date];
         NSLog(@"current time is %p",currentTime);
         
         NSDate *startTime = currentTime;
         
+        sleep(2);
+        
         currentTime = [NSDate date];
-        NSLog(@"current time is %p",currentTime);
-        currentTime = nil;
         NSLog(@"current time is %p",currentTime);
         NSLog(@"current time is %p",startTime);
         
@@ -141,7 +135,8 @@ int main(int argc, const char * argv[]) {
          
          */
         
-        
+        NSLog(@"chapter 16----------------------------------\n");
+
         
         NSString *slogan = @"I \u2261 New York!";
         NSLog(@"%@",slogan);
@@ -165,7 +160,7 @@ int main(int argc, const char * argv[]) {
         if(match.location == NSNotFound){
             NSLog(@"No Match found");
         }else{
-            NSLog(@"Match found ar %ld",match.location);
+            NSLog(@"Match found at %ld",match.location);
         }
         
         // challenge
