@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
         
         NSUInteger dateCount = [dateList count];
         
-        for(int i =0;i < dateCount;i++){
+        for (int i = 0; i < dateCount; i++){
             NSLog(@"%@",dateList[i]);
         }
         
@@ -58,25 +58,26 @@ int main(int argc, const char * argv[]) {
         [dateListMutable addObject:tomorrow];
 
         [dateListMutable insertObject:yesterday atIndex:0]; // insert
-        [dateListMutable removeObjectAtIndex:1]; //remove
+       [dateListMutable removeObjectAtIndex:1]; //remove
 
         for(NSDate *date in dateListMutable){
+            //[dateListMutable removeObjectAtIndex:1]; this will crash avoid adding or removing in fast enumeration. use standard for loops
             NSLog(@"The date mutable is %@", date);
         }
         
         //challenge // old style array methods
         NSMutableArray *groceryList = [NSMutableArray arrayWithObjects:@"My grocey list is", @"Loaf of bread", @"Milk",@"Butter", nil];
         
-        for(int i=0; i < [groceryList count]; i++){
+        for(int i = 0 ; i < [groceryList count]; i++){
             NSLog(@"%@",[groceryList objectAtIndex:i]);
         } //also use fast enumeration
         
+        //literal syntax [NSArray array] and subscripting dateList[0]
+        //id selectedDog = [dogs[tableView selectedRow] ]; // this might be confusing -
+        //id selectedDog = [dogs objectAtIndex: [tableView selectedRow]]; use this
         
-        
-        
+
         // interesting names
-        
-        
         
         // read the file
         
