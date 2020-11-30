@@ -51,7 +51,10 @@ int main(int argc, const char * argv[]) {
             
             BNREmployee *randomEmployee = [employees objectAtIndex:randomIndex];
             
+            
             [randomEmployee addAsset:asset];
+            
+            NSLog(@"Random Employee %@, asset: %@", randomEmployee, randomEmployee.assets);
         }
         
         NSLog(@"Employees: %@", employees);
