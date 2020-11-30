@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F42203DB257396E000C0ABB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F42203DA257396E000C0ABB8 /* main.m */; };
 		F42203E42573971900C0ABB8 /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F42203E32573971900C0ABB8 /* BNRPerson.m */; };
+		F42203E82574B3CE00C0ABB8 /* BNREmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = F42203E72574B3CE00C0ABB8 /* BNREmployee.m */; };
+		F42203EC2574C85800C0ABB8 /* BNRAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F42203EB2574C85800C0ABB8 /* BNRAsset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		F42203DA257396E000C0ABB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F42203E22573971900C0ABB8 /* BNRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRPerson.h; sourceTree = "<group>"; };
 		F42203E32573971900C0ABB8 /* BNRPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRPerson.m; sourceTree = "<group>"; };
+		F42203E62574B3CE00C0ABB8 /* BNREmployee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNREmployee.h; sourceTree = "<group>"; };
+		F42203E72574B3CE00C0ABB8 /* BNREmployee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNREmployee.m; sourceTree = "<group>"; };
+		F42203EA2574C85800C0ABB8 /* BNRAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAsset.h; sourceTree = "<group>"; };
+		F42203EB2574C85800C0ABB8 /* BNRAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAsset.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				F42203DA257396E000C0ABB8 /* main.m */,
 				F42203E22573971900C0ABB8 /* BNRPerson.h */,
 				F42203E32573971900C0ABB8 /* BNRPerson.m */,
+				F42203E62574B3CE00C0ABB8 /* BNREmployee.h */,
+				F42203E72574B3CE00C0ABB8 /* BNREmployee.m */,
+				F42203EA2574C85800C0ABB8 /* BNRAsset.h */,
+				F42203EB2574C85800C0ABB8 /* BNRAsset.m */,
 			);
 			path = BMITime;
 			sourceTree = "<group>";
@@ -123,8 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42203E82574B3CE00C0ABB8 /* BNREmployee.m in Sources */,
 				F42203DB257396E000C0ABB8 /* main.m in Sources */,
 				F42203E42573971900C0ABB8 /* BNRPerson.m in Sources */,
+				F42203EC2574C85800C0ABB8 /* BNRAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
