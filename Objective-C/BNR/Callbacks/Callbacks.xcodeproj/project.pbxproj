@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F408F8BC2575405C0014FDB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F408F8BB2575405C0014FDB5 /* main.m */; };
 		F408F8C52575409E0014FDB5 /* BNRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F408F8C42575409E0014FDB5 /* BNRLogger.m */; };
+		F408F8F925767B060014FDB5 /* BNRObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F408F8F825767B060014FDB5 /* BNRObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		F408F8BB2575405C0014FDB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F408F8C32575409E0014FDB5 /* BNRLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRLogger.h; sourceTree = "<group>"; };
 		F408F8C42575409E0014FDB5 /* BNRLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRLogger.m; sourceTree = "<group>"; };
+		F408F8F725767B060014FDB5 /* BNRObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRObserver.h; sourceTree = "<group>"; };
+		F408F8F825767B060014FDB5 /* BNRObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				F408F8BB2575405C0014FDB5 /* main.m */,
 				F408F8C32575409E0014FDB5 /* BNRLogger.h */,
 				F408F8C42575409E0014FDB5 /* BNRLogger.m */,
+				F408F8F725767B060014FDB5 /* BNRObserver.h */,
+				F408F8F825767B060014FDB5 /* BNRObserver.m */,
 			);
 			path = Callbacks;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F408F8C52575409E0014FDB5 /* BNRLogger.m in Sources */,
+				F408F8F925767B060014FDB5 /* BNRObserver.m in Sources */,
 				F408F8BC2575405C0014FDB5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
